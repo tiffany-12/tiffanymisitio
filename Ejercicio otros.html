@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Formularios</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header, footer {
+            background-color: #00ffff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav {
+            float: left;
+            width: 20%;
+            background-color: #4db8ff;
+            padding: 15px;
+        }
+
+        nav a {
+            display: block;
+            color: black;
+            text-decoration: none;
+            margin-bottom: 10px;
+        }
+
+        nav a:hover {
+            font-weight: bold;
+        }
+
+        main {
+            float: left;
+            width: 80%;
+            padding: 15px;
+        }
+
+        .formulario {
+            background-color: rgb(255, 141, 255);
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .formulario input, 
+        .formulario textarea, 
+        .formulario select, 
+        .formulario button {
+            margin: 10px 0;
+            padding: 5px;
+            width: 80%;
+        }
+
+        .formulario label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        .formulario .opciones {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        footer {
+            margin-top: 20px;
+        }
+
+        .clearfix::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>MIS FORMULARIOS</h1>
+    </header>
+    <div class="clearfix">
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Formulario 1</a>
+            <a href="#">Formulario 2</a>
+            <a href="#">Formulario 3</a>
+            <a href="#">Formulario 4</a>
+        </nav>
+        <main>
+            <h2>Contenido Principal</h2>
+            <p>Bienvenido a mi página web. Aquí encontrarás información interesante.</p>
+            <div class="formulario">
+                <h3>FORMULARIO COMPLETO</h3>
+                <form action="#" method="post">
+                    <label for="texto">Texto:</label>
+                    <input type="text" id="texto" name="texto">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password">
+                    <label for="textarea">Textarea:</label>
+                    <textarea id="textarea" name="textarea" rows="4"></textarea>
+                    <div class="opciones">
+                        <div>
+                            <label><input type="checkbox" name="campo_check" value="1"> Campo-check 1</label>
+                            <label><input type="checkbox" name="campo_check" value="2"> Campo-check 2</label>
+                            <label><input type="checkbox" name="campo_check" value="3"> Campo-check 3</label>
+                        </div>
+                        <div>
+                            <label><input type="radio" name="radio" value="1"> Radio 1</label>
+                            <label><input type="radio" name="radio" value="2"> Radio 2</label>
+                        </div>
+                    </div>
+                    <label for="seleccion">Selección:</label>
+                    <select id="seleccion" name="seleccion">
+                        <option value="primero">Primero</option>
+                        <option value="segundo">Segundo</option>
+                        <option value="tercero">Tercero</option>
+                    </select>
+                    <label for="seleccion_multiple">Selección Múltiple:</label>
+                    <select id="seleccion_multiple" name="seleccion_multiple" multiple>
+                        <option value="primera">Primera</option>
+                        <option value="segunda">Segunda</option>
+                        <option value="tercera">Tercera</option>
+                    </select>
+                    <div>
+                        <button type="button">Botón</button>
+                        <button type="reset">Iniciar</button>
+                        <button type="submit">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+    <footer>
+        Tiffany Barahona © 2025
+    </footer>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Segundo ejercicio formulario</title>
+</head>
+<img src="Imag\logo\JPEG">
+<body style="background-color: coral;">
+
+    <h1 align="center">FORMULARIO COMPLETO</h1>
+
+    <form action="procesa.php" method="post">
+        <table align="center" bordercolor="#FFCC00" border="1" cellspacing="10">
+            <tr>
+                <td>Texto:</td>
+                <td><input type="text" name="textol"></td>
+                <td>Password:</td>
+                <td><input type="password" name="pass"></td>
+            </tr>
+
+            <tr>
+                <td>Textarea:</td>
+                <td colspan="3"><textarea rows="7" cols="55"></textarea></td>
+            </tr>
+
+            <tr>
+                <td>
+                    Campo check 1: <input type="checkbox" value="1"><br>
+                    Campo check 2: <input type="checkbox" value="2"><br>
+                    Campo check 3: <input type="checkbox" value="3">
+                </td>
+                <td align="middle">
+                    Radio 1: <input type="radio" name="radio" value="1"><br>
+                    Radio 2: <input type="radio" name="radio" value="2">
+                </td>
+                <td valign="top">
+                    selección:<br>
+                    Clase: Desarrollo Web
+                    <select name="seleccion">
+                        <option>primera</option>
+                        <option>segunda</option>
+                    </select>
+                </td>
+                <td align="center">
+                    selección múltiple:<br>
+                    <select name="seleccion_multiple" multiple>
+                        <option>primera</option>
+                        <option>segunda</option>
+                        <option>tercera</option>
+                    </select>
+                </td>
+            </tr>
+        </table><br>
+
+        <div align="center">
+            <input type="button" value="Boton">
+            <input type="reset" value="Iniciar">
+            <input type="submit" value="Enviar">
+        </div>
+    </form>
+
+</body>
+</html>
